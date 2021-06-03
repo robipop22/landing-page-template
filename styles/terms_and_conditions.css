@@ -1,0 +1,24 @@
+.terms-and-conditions-content-container {
+  padding: 0 5%;
+}
+
+.terms-and-conditions-content-container h1 {
+  padding: 66px 0 16px;
+  font-weight: 700;
+}
+
+.terms-and-conditions-content-container p, a {
+  color: var(--secondary-color);
+  line-height: 1.75rem;
+  padding: 16px 0;
+}
+
+.terms-and-conditions-content-container span {
+  display: block;
+  color: var(--secondary-color);
+  line-height: 1.75rem;
+}
+
+footer {
+  margin-top: 124px;
+}

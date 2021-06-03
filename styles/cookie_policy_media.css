@@ -1,0 +1,28 @@
+@media (min-width: 1024px) {
+  footer {
+    width: calc(100% - 20%);
+    padding: 0 10%;
+  }
+  .cookie-policy-content-container {
+    padding: 0 10%;
+  }
+  nav {
+    width: calc(100% - 20%);
+    padding: 0 10%;
+  }  
+}
+
+@media (max-width: 768px) {
+  footer {
+    flex-direction: column;
+    padding: 20px 10%;
+    margin-top: 56px;
+    height: auto;
+  }
+  footer div:first-of-type {
+    margin-bottom: 24px;
+  }
+  footer a {
+    padding: 0 16px;
+  }
+}

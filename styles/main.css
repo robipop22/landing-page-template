@@ -1,0 +1,153 @@
+section {
+  padding: 100px 5%;
+}
+
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 90vh;
+  position: relative;
+  z-index: 0;
+}
+
+.hero img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  pointer-events: none;
+}
+
+.hero-text-container {
+  padding-top: 100px;
+  max-width: 730px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.hero-text-container h1 {
+  font-size: 3.75rem;
+}
+
+.hero-text-container p {
+  padding: 24px 0;
+  font-size: 1.5rem;
+  font-weight: 500;
+  font-family: Roboto;
+  line-height: 1.75rem;
+}
+
+.about {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-image: radial-gradient(98% 109%, #0A3049 0%, #042236 100%);
+  box-shadow: 2px 2px 4px 4px #051F31;
+  border-radius: 6px;
+}
+
+.about div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+}
+
+.about h2 {
+  font-size: 1.5rem;
+  color: var(--secondary-color);
+  padding-bottom: 16px;
+  font-family: Roboto;
+}
+
+.about p {
+  max-width: 520px;
+  color: var(--white);
+  line-height: 1.75rem;
+}
+
+.about p:first-of-type {
+  padding: 32px 0;
+}
+
+.projects {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.projects h1 {
+  font-weight: 700;
+}
+
+.projects .projects-subtitle {
+  max-width: 624px;
+  font-family: Roboto;
+  line-height: 1.75rem;
+}
+
+.projects p {
+  font-size: 1.5rem;
+  padding: 24px 0 44px;
+  font-family: Roboto;
+}
+
+
+
+
+.social {
+  height: auto;
+}
+
+.social .social-container {
+  position: relative;
+  height: 300px;
+  background-image: radial-gradient(98% 109%, #0A3049 0%, #042236 100%);
+  box-shadow: 2px 2px 4px 4px #051F31;
+}
+
+.social-container .social-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
+}
+
+.social-container .social-content p:first-of-type {
+  color: var(--secondary-color);
+  font-size: 1.5rem;
+}
+
+.social-container .social-content p:last-of-type {
+  font-size: 1.15rem;
+  font-weight: 700;
+  font-family: Roboto;
+}
+
+.social-container .social-content a {
+  font-size: 1.15rem;
+  color: var(--action-color);
+  text-decoration: underline;
+  font-family: Roboto;
+}
+
+.social-container .social-content .social-icons {
+  margin: 24px 0 32px;
+}
+
+.social-content .social-icons a, img {
+  width: 44px;
+  height: 44px;
+  cursor: pointer;
+  font-size: 0;
+}
+
+.social-container .social-content .social-icons a:nth-child(2) {
+  padding: 0 16px;
+}

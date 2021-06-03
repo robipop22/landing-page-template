@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="styles/reset.css">
+  <link rel="stylesheet" href="styles/variables.css">
+  <link rel="stylesheet" href="styles/nav.css">
+  <link rel="stylesheet" href="styles/terms_and_conditions.css">
+  <link rel="stylesheet" href="styles/footer.css">
+  <link rel="stylesheet" href="styles/terms_and_conditions_media.css">
+  <title>Simple Landing Page Template</title>
+</head>
+<body>
+  <nav role="navigation">
+    <div>
+      <a href="/">
+        <img loading="lazy" src="assets/laptop-logo.svg" alt="logo" />
+      </a>
+    </div>
+    <div class="toggle-menu"">
+      <input type="checkbox" />
+        <span></span>
+        <span></span>
+        <span></span>
+        <ul id="menu" role="menubar">
+          <a role="menuitem" href="/#about-section">About us</a>
+          <a role="menuitem" href="/#projects-section">Projects</a>
+          <a role="menuitem" href="/#social-section">Contact</a>
+        </ul>
+    </div>
+    <div  class="desktop-view">
+      <a role="menuitem" href="/#about-section">About us</a>
+      <a role="menuitem" href="/#projects-section">Projects</a>
+      <a role="menuitem" href="/#social-section">Contact</a>
+    </div>
+  </nav>
+  <div class="terms-and-conditions-content-container" style="padding-top: 100px;">
+    <h1>Terms and conditions</h1>
+    <p>
+      Welcome to our WebApp!
+    </p>
+  </div>
+  <div class="terms-and-conditions-content-container">
+    <h1>Cookies</h1>
+    <p>We employ the use of cookies <a href="/cookie_policy.html">(Cookie Policy)</a>. By accessing our WebApp, you agreed to use cookies in agreement with our <a href="/privacy_policy.html">Privacy Policy</a>.</p>
+    <p>Most interactive websites use cookies to let us retrieve the user’s details for each visit. Cookies are used by our website to enable the functionality of certain areas to make it easier for people visiting our website. Some of our affiliate/advertising partners may also use cookies. </p>
+  </div>
+  <div class="terms-and-conditions-content-container">
+    <h1>License</h1>
+  </div>
+  <div class="terms-and-conditions-content-container">
+    <h1>
+      Hyperlinking to our Content
+    </h1>
+
+  </div>
+  <div class="terms-and-conditions-content-container">
+    <h1>
+      Content Liability
+    </h1>
+  </div>
+  <div class="terms-and-conditions-content-container">
+    <h1>
+      Your Privacy
+    </h1>
+    <p>
+      Please read <a href="/privacy_policy.html">Privacy Policy</a>
+    </p>
+  </div>
+  <div class="terms-and-conditions-content-container">
+    <h1>
+      Reservation of Rights
+    </h1>
+    
+  </div>
+  <div class="terms-and-conditions-content-container">
+    <h1>
+      Removal of links from our website
+    </h1>
+  </div>
+  <div class="terms-and-conditions-content-container">
+    <h1>
+      Disclaimer
+    </h1>
+  </div>
+  <footer>
+    <div>
+      <img loading="lazy" src="assets/laptop-logo.svg" alt="logo" />
+    </div>
+    <div>
+      <span id="copyright-content">© Robert Pop</span>
+      <a href="/cookie_policy.html">Cookie Policy</a>
+      <a href="/terms_and_conditions.html">Terms and Conditions</a>
+      <a href="/privacy_policy.html">Privacy Policy</a>
+    </div>
+  </footer>
+  <script type="text/javascript">
+    function navToggle () {
+      if (window.scrollY > 100) {
+        document.getElementsByTagName('nav')[0].style = "opacity: 0.9";
+      } else {
+        document.getElementsByTagName('nav')[0].style = "opacity: 1";
+      }
+    }
+
+    window.addEventListener('scroll', navToggle);
+
+    window.removeEventListener('beforeunload', navToggle);
+
+    document.getElementById("copyright-content").innerText = "© " + new Date().getFullYear() + " Robert Pop";
+
+  </script>
+</body>
+</html>

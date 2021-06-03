@@ -1,0 +1,60 @@
+@media (min-width: 1920px) {
+  section {
+    padding: 100px 20%;
+  }
+}
+@media (min-width: 1600px) and (max-width: 1920px) {
+  section {
+    padding: 100px 15%;
+  }
+  nav {
+    width: calc(100% - 30%);
+    padding: 0 15%;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1600px) {
+  section {
+    padding: 100px 10%;
+  }
+  nav {
+    width: calc(100% - 20%);
+    padding: 0 10%;
+  }
+}
+
+@media (max-width: 1368px) and (min-width: 1024px) {
+
+}
+@media (max-width: 1024px) {
+
+}
+
+@media (max-width: 824px) {
+
+}
+
+@media (max-width: 768px) {
+  .hero-text-container h1 {
+    max-width: 260px;
+    word-spacing: 100rem;
+  }
+  .about h1 {
+    max-width: 260px;
+  }
+  .social {
+    padding: 100px 0 72px;
+  }
+  .network .network-details-container img {
+    padding-bottom: 16px;
+  }
+  .social-container .social-content p:last-of-type {
+    max-width: 250px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 640px) {
+}
+
+@media (max-width: 400px) {
+}

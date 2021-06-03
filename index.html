@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="styles/reset.css">
+  <link rel="stylesheet" href="styles/variables.css">
+  <link rel="stylesheet" href="styles/nav.css">
+  <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="styles/main_media.css">
+  <link rel="stylesheet" href="styles/modal.css">
+  <link rel="stylesheet" href="styles/footer.css">
+  <title>Simple Landing Page Template</title>
+</head>
+<body>
+  <nav role="navigation">
+    <div>
+      <a href="/">
+        <img loading="lazy" src="assets/laptop-logo.svg" alt="your-logo" />
+      </a>
+    </div>
+    <div class="toggle-menu">
+      <input role="navigation-toggle" type="checkbox" />
+        <span></span>
+        <span></span>
+        <span></span>
+        <ul id="menu" role="menubar" aria-owns="about-navigator projects-navigator social-navigator">
+          <a role="menuitem" id="about-navigator">About</a>
+          <a role="menuitem" id="projects-navigator">Projects</a>
+          <a role="menuitem" id="social-navigator">Contact</a>
+        </ul>
+    </div>
+    <div role="menubar" class="desktop-view">
+      <a role="menuitem" id="desktop-about-navigator">About</a>
+      <a role="menuitem" id="desktop-projects-navigator">Projects</a>
+      <a role="menuitem" id="desktop-social-navigator">Contact</a>
+    </div>
+  </nav>
+  <section class="hero">
+    <img loading="lazy" src="assets/hero.jpeg" loading="lazy" alt="hero-image" />
+    <div class="hero-text-container">
+      <h1>Hero Title</h1>
+      <p>Hero subtitle</p>
+      <button onclick="showModal()" role="button">Action button</button>
+    </div>
+  </section>
+  <section id="about-section" class="about">
+    <div>
+      <h2>ABOUT US</h2>
+      <p>
+        About us text      
+      </p>
+      <p>
+        About us text2
+      </p>
+    </div>
+  </section>
+  <section id="projects-section" class="projects">
+    <h1>Projects</h1>
+    <p class="projects-subtitle">Projects description</p>
+  </section>
+  <section id="social-section" class="social">
+    <div class="social-container">
+      <div class="social-content">
+        <p>
+          Get in touch with us
+        </p>
+        <div class="social-icons">
+          <a href="https://telegram.org/" rel="noopener" target="_blank">
+            <img loading="lazy" src="assets/telegram.svg" alt="telegram-social-icon" />
+          </a>
+          <a href="https://twitter.com/" rel="noopener" target="_blank">
+            <img loading="lazy" src="assets/twitter.svg" alt="twitter-social-icon" />
+          </a>
+          <a href="https://www.facebook.com/" rel="noopener" target="_blank">
+            <img loading="lazy" src="assets/facebook.svg" alt="facebook-social-icon" />
+          </a>
+        </div>
+        <p>
+          Or email us at <a href="mailto:email@email.com">contact@email.com</a>
+        </p>
+      </div>
+    </div>
+  </section>
+  <div id="coming-soon-modal" class="modal-window">
+    <div class="modal-content">
+      <h1>Model title!</h1>
+      <p>
+        Modal content
+      </p>
+      <button role="button" onclick="closeModal()">Close</button>
+    </div>
+  </div>
+  <footer>
+    <div>
+      <img loading="lazy" src="assets/laptop-logo.svg" alt="logo" />
+    </div>
+    <div>
+      <span id="copyright-content">© Robert Pop</span>
+      <a href="/cookie_policy.html">Cookie Policy</a>
+      <a href="/terms_and_conditions.html">Terms and Conditions</a>
+      <a href="/privacy_policy.html">Privacy Policy</a>
+    </div>
+  </footer>
+  <script type="text/javascript">
+    function navToggle () {
+      if (window.scrollY > 100) {
+        document.getElementsByTagName('nav')[0].style = "opacity: 0.9";
+      } else {
+        document.getElementsByTagName('nav')[0].style = "opacity: 1";
+      }
+    }
+
+    window.addEventListener('scroll', navToggle);
+
+    window.removeEventListener('beforeunload', navToggle);
+
+    document.getElementById('desktop-about-navigator').addEventListener('click', function() {
+      document.getElementById('about-section').scrollIntoView({
+        behavior: 'smooth'
+      });
+    });
+
+    document.getElementById('desktop-projects-navigator').addEventListener('click', function() {
+      document.getElementById('projects-section').scrollIntoView({
+        behavior: 'smooth'
+      });
+    });
+    
+    document.getElementById('desktop-social-navigator').addEventListener('click', function() {
+      document.getElementById('social-section').scrollIntoView({
+        behavior: 'smooth'
+      });
+    });
+
+    document.getElementById('about-navigator').addEventListener('click', function() {
+      document.getElementById('about-section').scrollIntoView({
+        behavior: 'smooth'
+      });
+    });
+
+    document.getElementById('projects-navigator').addEventListener('click', function() {
+      document.getElementById('projects-section').scrollIntoView({
+        behavior: 'smooth'
+      });
+    });
+    
+    document.getElementById('social-navigator').addEventListener('click', function() {
+      document.getElementById('social-section').scrollIntoView({
+        behavior: 'smooth'
+      });
+    });
+
+  var modal = document.getElementById("coming-soon-modal");
+
+  function showModal() {
+    modal.style.display = "block";
+  };
+
+  function closeModal() {
+    modal.style.display = "none";
+  };
+
+  window.onclick = function(event) {
+    if (event.target === modal) {
+      closeModal();
+    }
+  }
+
+  document.getElementById("copyright-content").innerText = "© " + new Date().getFullYear() + " Robert Pop";
+
+  </script>
+</body>
+</html>

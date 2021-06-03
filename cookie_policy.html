@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="styles/reset.css">
+  <link rel="stylesheet" href="styles/variables.css">
+  <link rel="stylesheet" href="styles/nav.css">
+  <link rel="stylesheet" href="styles/cookie_policy.css">
+  <link rel="stylesheet" href="styles/footer.css">
+  <link rel="stylesheet" href="styles/cookie_policy_media.css">
+  <title>Simple Landing Page Template</title>
+</head>
+<body>
+  <nav role="navigation">
+    <div>
+      <a href="/">
+        <img loading="lazy" src="assets/laptop-logo.svg" alt="logo" />
+      </a>
+    </div>
+    <div class="toggle-menu"">
+      <input type="checkbox" />
+        <span></span>
+        <span></span>
+        <span></span>
+        <ul id="menu" role="menubar">
+          <a role="menuitem" href="/#about-section">About us</a>
+          <a role="menuitem" href="/#projects-section">Projects</a>
+          <a role="menuitem" href="/#social-section">Contact</a>
+        </ul>
+    </div>
+    <div  class="desktop-view">
+      <a role="menuitem" href="/#about-section">About us</a>
+      <a role="menuitem" href="/#projects-section">Projects</a>
+      <a role="menuitem" href="/#social-section">Contact</a>
+    </div>
+  </nav>
+  <div class="cookie-policy-content-container" style="padding-top: 100px;">
+    <h1>Cookie Policy</h1>
+    <p>
+      This is the Cookie Policy
+    </p>
+  </div>
+  <div class="cookie-policy-content-container">
+    <h1>
+      What Are Cookies
+    </h1>
+    <p>
+      As is common practice with almost all professional websites this site uses cookies, which are tiny files that are downloaded to your computer, to improve your experience. This page describes what information they gather, how we use it and why we sometimes need to store these cookies. We will also share how you can prevent these cookies from being stored however this may downgrade or 'break' certain elements of the sites functionality.
+    </p>
+    <p>
+      For more general information on cookies, please read <a href="https://www.cookieconsent.com/what-are-cookies/" target="_blank" rel="noopener"> "What Are Cookies"</a>.
+    </p>
+  </div>
+  <div class="cookie-policy-content-container">
+    <h1>
+      How We Use Cookies
+    </h1>
+    <p>
+      We use cookies for a variety of reasons detailed below. Unfortunately in most cases there are no industry standard options for disabling cookies without completely disabling the functionality and features they add to this site. It is recommended that you leave on all cookies if you are not sure whether you need them or not in case they are used to provide a service that you use.
+    </p>
+  </div>
+  <div class="cookie-policy-content-container">
+    <h1>
+      Disabling Cookies
+    </h1>
+    <p>
+      You can prevent the setting of cookies by adjusting the settings on your browser (see your browser Help for how to do this). Be aware that disabling cookies will affect the functionality of this and many other websites that you visit. Disabling cookies will usually result in also disabling certain functionality and features of the this site. Therefore it is recommended that you do not disable cookies.
+    </p>
+  </div>
+  <div class="cookie-policy-content-container">
+    <h1>
+      The Cookies We Set
+    </h1>
+    <p>
+      Forms related cookies
+    </p>
+    <p>
+      When you submit data to through a form such as those found on contact pages or comment forms cookies may be set to remember your user details for future correspondence. 
+    </p>
+  </div>
+  <div class="cookie-policy-content-container">
+    <h1>
+      Third Party Cookies
+    </h1>
+    <p>
+      In some special cases we also use cookies provided by trusted third parties. The following section details which third party cookies you might encounter through this site.
+    </p>
+    <p>
+      This site uses Google Analytics which is one of the most widespread and trusted analytics solution on the web for helping us to understand how you use the site and ways that we can improve your experience. These cookies may track things such as how long you spend on the site and the pages that you visit so we can continue to produce engaging content.
+    </p>
+    <p>
+      For more information on Google Analytics cookies, see the official Google Analytics page.
+    </p>
+    <p>
+      From time to time we test new features and make subtle changes to the way that the site is delivered. When we are still testing new features these cookies may be used to ensure that you receive a consistent experience whilst on the site whilst ensuring we understand which optimisations our users appreciate the most.
+    </p>
+  </div>
+  <div class="cookie-policy-content-container">
+    <h1>
+      More Information
+    </h1>
+    <p>
+      Hopefully that has clarified things for you and as was previously mentioned if there is something that you aren't sure whether you need or not it's usually safer to leave cookies enabled in case it does interact with one of the features you use on our site. This Cookies Policy was created with the help of the <a target="_blank" rel="noopener" href="https://www.cookiepolicygenerator.com/">Cookies Policy Template Generator</a>  and the <a target="_blank" rel="noopener" href="https://www.privacypolicytemplate.net/">Privacy Policy Template Generator</a>.
+    </p>
+    <p>
+      However if you are still looking for more information then you can contact us through one of our preferred contact methods:
+    </p>
+    <p>
+      Email: email@email.com
+    </p>
+  </div>
+  <footer>
+    <div>
+      <img loading="lazy" src="assets/laptop-logo.svg" alt="logo" />
+    </div>
+    <div>
+      <span id="copyright-content">© Robert Pop</span>
+      <a href="/cookie_policy.html">Cookie Policy</a>
+      <a href="/terms_and_conditions.html">Terms and Conditions</a>
+      <a href="/privacy_policy.html">Privacy Policy</a>
+    </div>
+  </footer>
+  <script type="text/javascript">
+    function navToggle () {
+      if (window.scrollY > 100) {
+        document.getElementsByTagName('nav')[0].style = "opacity: 0.9";
+      } else {
+        document.getElementsByTagName('nav')[0].style = "opacity: 1";
+      }
+    }
+
+    window.addEventListener('scroll', navToggle);
+
+    window.removeEventListener('beforeunload', navToggle);
+
+    document.getElementById("copyright-content").innerText = "© " + new Date().getFullYear() + " Robert Pop";
+
+  </script>
+</body>
+</html>

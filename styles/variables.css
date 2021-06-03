@@ -1,0 +1,10 @@
+:root {
+  --secondary-color: #8ecaf2;
+  --primary-color: #07263b;
+  --primary-color-transparency: rgba(7, 38, 59, 0.4);
+  --action-color: #fac05e;
+  --white: #fff;
+  --grey: #f3f3f3;
+  --dark-grey: #dedede;
+  --black: #000;
+}
